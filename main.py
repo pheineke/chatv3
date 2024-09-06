@@ -1,8 +1,6 @@
-from flask import Flask
+from app import create_app
 
-import app
+app = create_app()
 
-app_ = app.create_app()
-
-if __name__ == '__main__':
-    app_.run(host='0.0.0.0', port=5000, debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
